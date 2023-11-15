@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %} {% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/login/index.css') }}" />
+
+<link rel="stylesheet" href="{{ asset('css/announcement/create.css') }}" />
+
+{% endblock %} {% block body %}
+
+<div class="create-announcement-container">
+  <div class="title">Nouvelle annonce</div>
+  <div class="form-container">
+    {{ form_errors(createAnnouncementForm) }}
+
+    {{ form_start(createAnnouncementForm) }}
+    {{ form_row(createAnnouncementForm.title, { label: "Titre" }) }}
+    {{
+      form_row(createAnnouncementForm.content, {
+        label: "Description"
+      })
+    }}
+    {{
+      form_row(createAnnouncementForm.price, {
+        label: "Prix"
+      })
+    }}
+    {{
+      form_row(createAnnouncementForm.category, {
+        label: "Catégorie"
+      })
+    }}
+
+    <button type="submit" class="btn">Enregistrer</button>
+    {{ form_end(createAnnouncementForm) }}
+  </div>
+</div>
+
+{% endblock %}

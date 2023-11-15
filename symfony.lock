@@ -218,6 +218,9 @@
             "templates/base.html.twig"
         ]
     },
+    "symfony/ux-toggle-password": {
+        "version": "v2.13.2"
+    },
     "symfony/validator": {
         "version": "6.3",
         "recipe": {
@@ -242,6 +245,9 @@
             "config/packages/web_profiler.yaml",
             "config/routes/web_profiler.yaml"
         ]
+    },
+    "symfonycasts/verify-email-bundle": {
+        "version": "v1.14.0"
     },
     "twig/extra-bundle": {
         "version": "v3.7.1"

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %} {% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/announcement/show.css') }}" />
+{% endblock %} {% block body %}
+<div class="announcement-product-container">
+  <div class="left">
+    <div class="image-container">
+      <img src="{{ asset('img/noimage.jpg') }}" alt="" />
+    </div>
+  </div>
+  <div class="right">
+    <div class="title">{{ announcement.title }}</div>
+    <div class="price">{{ announcement.price }} €</div>
+    <div class="category">{{ announcement.category.libelle }}</div>
+    <div class="description">{{ announcement.content }}</div>
+  </div>
+</div>
+{% endblock %}

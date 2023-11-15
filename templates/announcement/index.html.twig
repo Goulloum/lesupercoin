@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %} {% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/announcement/index.css') }}" />
+{% endblock %} {% block body %}
+<div class="announcements-container">
+  <div class="controls"></div>
+  <div class="announcements">
+    {% for announcement in announcements %}
+    <a
+      class="announcement-card"
+      href="{{ path('app_announcement_show', { id: announcement.id }) }}"
+    >
+      <div class="title">{{ announcement.title }}</div>
+      <img src="{{ asset('img/noimage.jpg') }}" alt="" />
+      <div class="price">{{ announcement.price }} €</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

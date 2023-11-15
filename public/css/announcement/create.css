@@ -1,0 +1,30 @@
+.create-announcement-container {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-announcement-container>.title {
+    font-size: 5vh;
+    font-weight: 600;
+    margin-top: 15vh;
+}
+
+.form-container {
+    width: 60%;
+}
+
+form {
+    width: 100%;
+}
+
+.form-container>form>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
